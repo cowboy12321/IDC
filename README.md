@@ -13,6 +13,11 @@ Image Difference Captioning（IDC）是一个旨在生成描述两幅图像之�
 
 ## 参考文献分配  
 **任务：** 根据各自文献总结模型思路  
+**人员安排：**  
+- *user1:丁彦君*   
+- *user2:陈羿帆*   
+- *user3:徐庆余*     
+**分配：**    
 
 - **分配给 user1：**  
    [http://arxiv.org/abs/2402.19119](http://arxiv.org/abs/2402.19119)  
