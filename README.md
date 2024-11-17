@@ -14,39 +14,41 @@ Image Difference Captioning（IDC）是一个旨在生成描述两幅图像之�
 ## 参考文献分配  
 **任务：** 根据各自文献总结模型思路  
 
-- **分配给 a：**  
+- **分配给 user1：**  
    [http://arxiv.org/abs/2402.19119](http://arxiv.org/abs/2402.19119)  
    [https://doi.org/10.48550/arXiv.2312.02974](https://doi.org/10.48550/arXiv.2312.02974)  
    [https://aclanthology.org/2022.aacl-short.5](https://aclanthology.org/2022.aacl-short.5)  
    [https://doi.org/10.1109/CVPR46437.2021.00275](https://doi.org/10.1109/CVPR46437.2021.00275)  
 
-- **分配给 b：**  
+- **分配给 user2：**  
    [http://arxiv.org/abs/2407.05645](http://arxiv.org/abs/2407.05645)  
    [https://doi.org/10.48550/arXiv.1808.10584](https://doi.org/10.48550/arXiv.1808.10584)  
    [http://arxiv.org/abs/2408.04594](http://arxiv.org/abs/2408.04594)  
    [https://doi.org/10.48550/arXiv.1901.02527](https://doi.org/10.48550/arXiv.1901.02527)  
 
-- **分配给 c：**  
+- **分配给 user3：**  
    [https://doi.org/10.48550/arXiv.2309.16283](https://doi.org/10.48550/arXiv.2309.16283)  
    [https://doi.org/10.18653/v1/2021.findings-acl.6](https://doi.org/10.18653/v1/2021.findings-acl.6)  
    [https://doi.org/10.1609/aaai.v36i3.20218](https://doi.org/10.1609/aaai.v36i3.20218)  
    [https://openreview.net/forum?id=eiGs5VCsYM](https://openreview.net/forum?id=eiGs5VCsYM)  
 
+### Architectural analysis
+	每篇文章需要有对应的架构分析
+
 ---
 
-## 三、任务复现  
+## 任务复现  
 
 **目标：**  
-复现分配文献中的关键模型，掌握实现细节并进行性能验证，为后续改进奠定基础。  
+在各自文献中挑选出最合适一种的或者融合多种方法，复现分配文献中的关键模型，掌握实现细节并进行性能验证，为后续改进奠定基础。  
 
 ### 复现步骤：  
 1. **环境配置：**  
-   - 安装所需依赖项（例如 PyTorch、Transformers、OpenCV）。  
+   - 安装所需依赖项（ PyTorch）。  
    - 确保 GPU 环境可用，以支持大规模训练与推理。  
 
 2. **代码获取与审查：**  
-   - 在 Git 仓库中建立分支，用于各自任务的代码提交和调试。  
-   - 提醒组员将代码提交至统一路径（如 `codebase/reproduction/`）下，方便协作和版本管理。  
+   - Git 仓库中有不同分支，用于各自任务的代码提交和调试。  
 
 3. **模型复现：**  
    - 根据文献提供的模型架构和实验设置，逐步实现相关方法。  
@@ -61,46 +63,43 @@ Image Difference Captioning（IDC）是一个旨在生成描述两幅图像之�
 ## **代码提交提示设计**  
 
 ### **提交方式：**  
-- **代码提交路径：**  
-  在 `GitHub` 或 `GitLab` 仓库中建立以下路径结构：  
+- **代码提交：**  
+ 建议使用 `GitHub Desktop` ：  
 
 - **跳转方式：**  
-组员提交代码后，可直接通过超链接访问对应代码目录。例如：  
-- **人员 a：** 提交路径 [codebase/reproduction/a](#)  
-- **人员 b：** 提交路径 [codebase/reproduction/b](#)  
-- **人员 c：** 提交路径 [codebase/reproduction/c](#)  
+- **user1：** 提交路径:[src/Reproduction/user1.py](src/Reproduction/user1.py)
+- **user2：** 提交路径:[src/Reproduction/user2.py](src/Reproduction/user2.py)
+- **user3：** 提交路径:[src/Reproduction/user3.py](src/Reproduction/user3.py)
 
-### **提交说明：**  
-1. **命名规范：**  
- 每个模型实现的文件夹以模型名命名（如 `Model_XYZ`），确保清晰且可追溯。  
-2. **注释要求：**  
- 代码需附详细注释，便于组员理解和后续改进。  
-3. **README 文档：**  
- 每个文件夹应包含简要的 `README.md`，说明模型架构、运行方法及依赖项。  
+### **提交说明：**   
+1. **注释要求：**  
+ 代码需附注释，在开头处简要说明模型的框架和出处，便于组员理解和后续改进。  
+2. **README 文档：**  
+ 在 `README.md`中说明模型架构、运行方法及依赖项。  
 
 ---  
 
-## 四、数据自动标注生成  
+## 数据自动标注生成  
 **任务：** 基于任务复现的模型进行数据自动标注生成工作。  
 
 ---
 
-## 五、围绕独居老人跌倒检测报警应用进行微调  
+## 围绕独居老人跌倒检测报警应用进行微调  
 **任务：** 围绕独居老人跌倒检测报警这个应用对已做任务进行微调。  
 
 ---
 
-## 六、共同商讨模型改进方向  
+## 共同商讨模型改进方向  
 **任务：** 三人共同商讨出模型改进方向。  
 
 ---
 
-## 七、搭建框架  
+## 搭建框架  
 **任务：** 根据商讨出的模型改进方向一起搭建框架。  
 
 ---
 
-## 八、分工实现框架  
+## 分工实现框架  
 **任务：**  
 - **人员 a：** 负责框架中的一部分任务实现。  
 - **人员 b：** 承担框架中的另一部分任务实现。  
@@ -108,10 +107,10 @@ Image Difference Captioning（IDC）是一个旨在生成描述两幅图像之�
 
 ---
 
-## 九、汇总应用到下游任务  
+## 汇总应用到下游任务  
 **任务：** 将汇总后的成果应用到下游任务中。  
 
 ---  
 
-## 十、论文撰写  
+## 论文撰写  
 **任务：** 整理成果并撰写论文。  
